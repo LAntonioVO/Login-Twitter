@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+main{
+    display:flex;
+    flex-flow: row wrap-reverse;
+}
+
+.presentation{
+    background-color: #71C9F8;
+    font-size: 19px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    width: 50%;
+    background-image: url(https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-2-1.png);
+    /* background-attachment:local; */
+    background-size:130%;
+    background-repeat: no-repeat;
+    /* height: 300px; */
+}
+ li{
+    font-size: inherit;
+    margin: 40px;
+ }
+
+.enter{
+    width: 50%;
+    display: flex;
+    /* flex-flow: column wrap; */
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+
+
+.signups{
+    /* display: flex;
+    flex-flow: row wrap; */
+    margin: 40px;
+    width: 60%;
+}
+
+.signups h2{
+    font-size:14px;
+}
+
+.button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: 1px solid;
+    border-color: #1A91DA;
+    margin: 10px;
+    align-self: center;  
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+
+.signup-btn{
+    background-color: #1A91DA;
+
+    color: white;
+}
+.login-btn{
+    background-color:white;
+
+    color: #1A91DA;
+}
+.login-btn:hover{
+    background-color: #b8d8ec77;
+}
+
+.slogan{
+    font-size:30px;
+}
+
+.footer{
+    font-size: 13px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+    margin: 10px;
+    color:#808080;
+}
+small{
+    margin: 10px;
+    font-size: inherit;
+}
+
+/* .logo{
+    width: 130px;
+    height: 110px;
+    background-image: url("../img/twitter-bird.png");
+    background-size: 130px;
+    animation-name: fly;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+} */
+
+.logo {
+	width: 65px;
+	height: 65px;
+	background-image: url("../img/twitter-bird.png");
+	background-size: 255px;
+	animation-name: fly;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(4);
+}
+
+
+
+@media screen and (max-width:800px){
+    .presentation{
+        width: 100%;
+    }
+    .enter{
+        width: 100%;
+    }
+}
+
+
+@keyframes fly{
+    from{
+        background-position: 0px;
+    }
+    to{
+        background-position: 255px;
+    }
+}
